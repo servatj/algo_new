@@ -1,4 +1,4 @@
-import { reverseBuildIn, reverse, reverseReduce } from '../challenges/reverseString';
+import { reverseBuildIn, reverse, reverseReduce, reverseForOf } from '../challenges/reverseString';
 
 describe('Reverse algorithm', () => {
   test('Build in reverse', () => {
@@ -11,6 +11,12 @@ describe('Reverse algorithm', () => {
     expect(reverse('apple')).toBe('elppa')
     expect(reverse('hello')).toBe('olleh')
     expect(reverse('Greetings!')).toBe('!sgniteerG')
+  })
+
+  test('Normal reverse', () => {
+    expect(reverseForOf('apple')).toBe('elppa')
+    expect(reverseForOf('hello')).toBe('olleh')
+    expect(reverseForOf('Greetings!')).toBe('!sgniteerG')
   })
 
   test('Normal reverse', () => {

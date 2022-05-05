@@ -18,6 +18,18 @@ export const reverse = (word: string) => {
   return reversedWord;
 }
 
+export const reverseForOf = (word: string) => {
+  // Create an empty string called reversed
+  // for each character in provided string
+      // take the character and add it to the start of 'reversed'
+  // return the variable reversed
+  let reversedWord = '';
+  for (const character of word) {
+    reversedWord = character + reversedWord
+  }
+  return reversedWord;
+}
+
 export const reverseReduce = (word: string) => {
   // convert into array
   // use reduce to concat each character reversed
