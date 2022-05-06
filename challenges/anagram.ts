@@ -1,7 +1,5 @@
 export const isAnagram =  (word1: string, word2: string) => {
-  type Frequency = {
-    [index: string]: number;
-  }
+  type Frequency = Record<string, number>
 
   if (word1.length !== word2.length) {
     return false;
